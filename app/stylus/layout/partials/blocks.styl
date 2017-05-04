@@ -1,0 +1,23 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* SECTIONS AND ARTICLES */
+section {}
+
+article {}
+
+.container
+  +displays()
+    width 1170px
+
+.spacer
+  width 100%
+  height 70px
+
+
+.spacer.big
+  height 90px
+.spacer.biggest
+  height 208px
+  +mobile()
+    height 130px

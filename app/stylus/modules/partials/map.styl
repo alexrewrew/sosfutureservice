@@ -1,0 +1,14 @@
+.map
+  iframe
+    width 100%
+    height calc(100vh - 172px)
+    position relative
+    transitions()
+    +portrait()
+      height: calc(100vh - 217px)
+    +mobile()
+      padding-top 48px
+
+.map.small
+  iframe
+    height calc(100vh - 400px)

@@ -1,0 +1,98 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | #SOSмайбутнє
+
+block content
+
+    .map
+        iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7212.636388966892!2d30.52727931734129!3d50.40935008628447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2z0KLQoNCmIE9jZWFuIFBsYXph!5e0!3m2!1suk!2sua!4v1493299537793', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
+
+    section.about
+        .container
+            .row
+                .col-md-7
+                    h4 Що представлено на карті?
+                    p На карті відмічені об’єкти, що потребують допомоги. Щоб дізнатися більше, оберіть відмітку на карті. Також кожен з вас може долучитися до ініциативи та додати свою історію.
+                .col-md-5.text-right
+                    a(href='' title='' class='object-add')
+                        ul
+                            li Додати об'єкт
+                            li.plus +
+
+
+    article.project
+        a(class='arrow-down' href='' title='')
+            i.fa.fa-angle-down
+        .container
+            .row
+                .col-md-5
+                    h2 Дача родини фон Мекк
+                    p.description-small Будівля знаходиться в приватній власності і стоїть пусткою в жалюгідному стані. Запланована реставрація до ЕВРО-2012 так і не відбулася.
+                    a(href='#details' title='' class='know-more smooth') Детальніше
+                        i.fa.fa-angle-down
+                .col-md-4
+                    .project-image-container
+                        img(src='img/project/project-folder.png' title='' alt='')
+                .col-md-3
+                    .text-right
+                        a(href='' title='' class='object-add')
+                            ul
+                                li Додати об'єкт
+                                li.plus +
+                    h3 Ініціатор:
+                    p Громада села
+                    h3 Місцезнаходження:
+                    p село Копилів Макарівського району Київської області
+            .row.spacer
+            .row
+                .col-md-10
+                    h2#details Детальна інформація
+                    p.description
+                        | Сучасна будівля має 2 поверхи, мансарду та невелику терасу. Фасад прикрашено геометричним орнаментом з дерева і романтичними гостроверхими башточками на даху. У 1889 р. та 1890 р. у Миколи фон Мекка в Копилові гостював російський композитор Петро Чайковський. Композитор був не лише дядьком дружини барона – Ганни Давидової, але й другом за перепискою його матері – Надії Філаретівни, яка підтримувала митця матеріально. У знак вдячності Чайковський присвятив свою 4-ту Симфонію Надії Філаретівні фон Мекк. В маєтку також побував Михайло Врубель. Микола Карлович допомагав художникові, скуповуючи його картини та оплачуючи лікування. У 1910 р. Микола фон Мекк продав свою садибу родині Дурасових. Після Першої світової війни та Жовтневого перевороту в будинку розміщувалась агрономічна школа, в роки німецької окупації – штаб. У 1943-1945 рр. у приміщенні маєтку фон Мекків розміщувався військовий госпіталь. До 1954 р. в будинку діяла центральна районна лікарня, а потім – Копилівська середня школа, музична школа, контора дослідного господарства «Копилове» та сільська рада. Копилів. Нині будівля знаходиться в приватній власності і стоїть пусткою в жалюгідному стані. Запланована реставрація до ЕВРО-2012 так і не відбулася.
+            .row.spacer
+            .row
+                .col-md-9
+
+                    ul.slider
+                        li(data-thumb='img/project/slider1.png')
+                            img(src='img/project/slider1.png' title='' alt='')
+                        li(data-thumb='img/project/slider2.jpg')
+                            img(src='img/project/slider2.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider3.jpg')
+                            img(src='img/project/slider3.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider4.jpg')
+                            img(src='img/project/slider4.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider5.jpg')
+                            img(src='img/project/slider5.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider1.png')
+                            img(src='img/project/slider1.png' title='' alt='')
+                        li(data-thumb='img/project/slider2.jpg')
+                            img(src='img/project/slider2.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider3.jpg')
+                            img(src='img/project/slider3.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider4.jpg')
+                            img(src='img/project/slider4.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider5.jpg')
+                            img(src='img/project/slider5.jpg' title='' alt='')
+
+
+                .col-md-3
+                    ul.slider-counter
+                        li#current 1
+                        li /
+                        li#total
+                    a(href='' title='' class='button big') Додати фото
+
+            .row.spacer.big
+
+            .row.share
+                .offset-md-1.col-md-5
+                    p Розкажи друзям, допоможи
+                        br
+                        | нам відновити країну
+                .col-md-5.text-right
+                    a(href='' title='' class='button white') Поділитись
+
+            .row.spacer.biggest

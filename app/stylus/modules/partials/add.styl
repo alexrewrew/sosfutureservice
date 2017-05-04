@@ -1,0 +1,89 @@
+.add-new
+  padding-top 80px
+  padding-bottom 150px
+  form
+    padding-top 5px
+    input
+      margin-bottom 30px
+      padding: 14px 33px 15px;
+    button
+      max-width 262px
+      width 100%
+  iframe
+    height: 220px;
+    width 100%
+    margin-bottom 30px
+
+.counter
+  font-size: 2.375em
+  letter-spacing: 4.1px;
+  color: $text-gray2
+  font-weight 500
+  text-align right
+  float right
+  position relative
+  height 100%
+  width 28px
+  +mobile()
+    float none
+  &:before
+    pseudo(block, absolute)
+    width 6px
+    height 6px
+    background: $text-gray2
+    border-radius 50%
+    top 20px
+    left -18px
+    +mobile()
+      display none
+  &:after
+    pseudo(none, absolute)
+    width 2px
+    height 20px
+    background $red-main
+    top 20px
+    left -16px
+    height 100%
+
+.step
+  user-select none
+  pointer-events:none
+  opacity .3
+
+
+.step.current
+  pointer-events auto
+  opacity 1
+  .counter
+    color: $red-main
+    &:before
+      background $red-main
+    &:after
+      display none
+
+.step.passed
+  pointer-events auto
+  opacity 1
+  .counter
+    color: $red-main
+    &:before
+      background $red-main
+    &:after
+      display block
+      +mobile()
+        display none
+
+.input-two
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-between
+  input
+    flex 1 1 48%
+    max-width 48%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+
+input.big
+  width 100%

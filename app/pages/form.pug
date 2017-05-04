@@ -1,0 +1,74 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | #SOSмайбутнє
+
+block content
+
+    section.add-new
+        .container
+            .row
+                .col-12
+                    h2 Додати об’єкт
+            form
+                .row.step.passed
+                    .offset-md-1.col-md-1
+                        .counter 1
+                    .col-md-8
+                        h4 Заповніть всі поля:
+                        .input-two
+                            input(type='text' placeholder='Введіть ім’я')
+                            input(type='text' placeholder='Введіть прізвище')
+                            input(type='mail' placeholder='Введіть e-mail')
+                            input(type='tel' placeholder='Введіть телефон')
+                .row.step.passed
+                    .offset-md-1.col-md-1
+                        .counter 2
+                    .col-md-8
+                        h5 Назва проекту
+                        input(type='text' placeholder='Введіть назву' class='big')
+                .row.step.passed
+                    .offset-md-1.col-md-1
+                        .counter 3
+                    .col-md-8
+                        h5 Назва проекту
+                        textarea(type='text' placeholder='Введіть назву')
+                .row.step.current
+                    .offset-md-1.col-md-1
+                        .counter 4
+                    .col-md-8
+                        h5 Фото об’єкту
+                        p Розмір зображення повинен бути не меншим ніж 700х460 px (Перше фото - фото обкладинки)
+                        .file
+                            .file-upload
+                                label
+                                    input(type='file', name='file')
+                                    span
+                                        i.fa.fa-camera
+                                        | Додати фото
+                            .file-upload.file-add
+                                label#add
+                                    span +
+
+                .row.step
+                    .offset-md-1.col-md-1
+                        .counter 5
+                    .col-md-8
+                        h5 Детальна інформація
+                        textarea(type='text' placeholder='Введіть інформацію')
+                        h5 Посилання на статті чи інформацію про об’єкт
+                        input(type='text' class='big' placeholder='Введіть посилання на веб-сторінки')
+                .row.step
+                    .offset-md-1.col-md-1
+                        .counter 6
+                    .col-md-8
+                        h5 Вкажіть місце розташування об’єкту
+                        input(type='text' class='big' placeholder='Адреса або координати')
+                        .input-two
+                            input(type='text' placeholder='50.41417299999999')
+                            input(type='text' placeholder='30.51924699999995')
+                        iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7212.636388966892!2d30.52727931734129!3d50.40935008628447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2z0KLQoNCmIE9jZWFuIFBsYXph!5e0!3m2!1suk!2sua!4v1493299537793', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
+                        button(type='submit' class='button big') Відправити
+
+

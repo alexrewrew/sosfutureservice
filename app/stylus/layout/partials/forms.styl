@@ -1,0 +1,121 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* FORMS */
+form {}
+
+.form-footer
+  padding-top 7px
+  +mobile()
+    margin-bottom 50px
+  input
+    width 100%
+    max-width 293px
+    border 4px solid transparent
+    padding 5px 29px 6px
+    +tablet()
+      max-width 285px
+    +portrait()
+      width 100%
+    +mobile()
+      width 100%
+      margin-left 0
+      max-width unset
+    &:focus
+      outline none
+      border-color $red-main
+  button
+    margin-left -4px
+    +portrait()
+      width 100%
+      margin-left 0
+    +mobile()
+      width 100%
+      margin-left 0
+
+/* INPUTS */
+input
+  font-size: .875em
+  line-height: 1.57;
+  color: $text-gray2
+  padding 9px 33px 10px
+  border none
+  background $text-gray
+  border 4px solid transparent
+  transitions()
+  +placeholder()
+    color $text-gray2
+  &:focus
+    border-color $blue
+    outline none
+
+input.error
+  border-color red
+  +placeholder()
+    color red
+
+textarea
+  font-size: .875em
+  line-height: 1.57;
+  color: $text-gray2
+  padding 9px 33px 10px
+  border none
+  background $text-gray
+  resize none
+  width 100%
+  min-height 90px
+  margin-bottom 30px
+  border 4px solid transparent
+  transitions()
+  +placeholder()
+    color $text-gray2
+  &:focus
+    outline none
+    border-color $blue
+
+textarea.error
+  border-color red
+  +placeholder()
+    color red
+
+
+.file
+  display flex
+  flex-direction row
+  flex-wrap wrap
+
+.file-upload
+  position: relative
+  overflow: hidden
+  width: 165px;
+  height: 139px;
+  background $text-gray
+  color $text-gray2
+  text-align: center
+  margin-bottom 30px
+  margin-right 15px
+  transitions()
+  +mobile()
+    width calc(50% - 15px)
+  &:hover
+    opacity .7
+.file-upload input[type="file"]
+  display: none
+.file-upload label
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  cursor: pointer
+  padding-top 37px
+.file-upload span
+  .fa
+    display block
+    font-size 43px
+
+.file-add
+  background transparent
+  span
+    font-size 50px

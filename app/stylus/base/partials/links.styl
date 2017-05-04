@@ -1,0 +1,90 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* LINKS */
+a
+  text-decoration none
+  transitions()
+  &:hover
+    text-decoration none
+
+  &:focus
+    text-decoration none
+
+.know-more
+  font-size 1.125em
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 4.5px;
+  color: $red-light
+  font-weight 700
+  display inline-block
+  position absolute
+  bottom 5px
+  left 15px
+  padding-right 40px
+  .fa
+    position absolute
+    font-size 45px
+    right 0
+    top -13px
+  &:hover
+    color $blue
+
+.arrow-down
+  position absolute
+  display block
+  width: 44px;
+  height: 44px;
+  left: calc(50% - 22px)
+  top -27px
+  background $white
+  border-radius 50%
+  box-shadow: 0px 0px 38px 0px rgba(0,0,0,.5);
+  text-align center
+  .fa
+    color $red-main
+    font-size 2em
+    line-height 44px
+    transitions()
+  &:hover
+    background $red-main
+    .fa
+      color $white
+
+.arrow-down.arrow-rotate
+  transform rotate(180deg)
+
+.object-add
+  display inline-block
+  &:hover
+    ul
+      li
+        color $red-main
+      .plus
+        background $white
+        color $red-main
+  ul
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    padding 0
+    margin: 7px 4px;
+    align-items center
+    li
+      list-style none
+      color $gray-dark
+      letter-spacing: 1.9px
+      vertical-align middle
+      transitions()
+      &:first-child
+        margin-right 18px
+    .plus
+      background $red-main
+      color $white
+      border-radius 50%
+      width: 60px;
+      height: 60px;
+      font-size 2.8em
+      padding: 0 15px
+      box-shadow: 0px 0px 38px 0px rgba(0,0,0,.5);

@@ -1,0 +1,40 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* BUTTON */
+button {}
+
+.button
+  background $red-main
+  display inline-block
+  border none
+  letter-spacing: 3.4px;
+  color: $white
+  padding 10px 17px 12px
+  cursor pointer
+  text-align center
+  transitions()
+  &:hover
+    background $white
+    color $red-main
+  &:focus
+    outline none
+
+.button.big
+  width 100%
+  padding 18px 0 23px
+  letter-spacing: 3px;
+
+.button.white
+  background $white
+  color $red-main
+  max-width 262px
+  width 100%
+  letter-spacing: 3px;
+  font-size 1.125em
+  padding 18px 0 20px
+  &:hover
+    background $red-middle
+    color $white
+  +mobile()
+    max-width 100%

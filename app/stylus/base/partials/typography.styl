@@ -1,0 +1,68 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* HEADERS */
+
+h1 {}
+h2
+  font-size: 1.375em
+  letter-spacing: 3.4px
+  color: $text-darker
+  position relative
+  padding-bottom 12px
+  margin-bottom 25px
+  +portrait()
+    font-size 1.25em
+  &:after
+    pseudo(block, absolute)
+    width: 68px;
+    height: 3px;
+    background $blue
+    bottom 0
+    left 0
+h3
+  font-size: 1.125em
+  letter-spacing: 3.4px
+  color: $text-darker
+  position relative
+  padding-bottom 12px
+  margin-bottom 5px
+  margin-top 10px
+  &:after
+    pseudo(block, absolute)
+    width: 68px;
+    height: 3px;
+    background $blue
+    bottom 0
+    left 0
+h4
+  font-size: 1.125em
+  letter-spacing: 2.7px
+  color: $text-darker
+  font-weight 700
+  margin-bottom 12px
+h5
+  font-weight 500
+  font-size: 1em
+  color: $text-darker
+h6 {}
+
+/* PARAGRAPH */
+p
+  font(.875em, $black, 300, $text-dark)
+  line-height: 1.43;
+
+.text-right
+  text-align right
+
+.description
+  columns: 100px 2
+  column-gap: 80px;
+  padding-right 50px
+  +mobile()
+    padding-right 0
+  columns 1
+
+.description-small
+  +mobile()
+    margin-bottom: 80px;
