@@ -11400,7 +11400,7 @@ $(document).ready(function () {
 
     //file upload
     $('#add').click(function () {
-        $('.file').prepend('<div class="file-upload"><label><input type="file" name="file"><span><i class="fa fa-camera"></i>Додати фото</span></label></div>');
+        $('.file').append('<div class="file-upload"><label><input type="file" name="file"><span><i class="fa fa-camera"></i>Додати фото</span></label></div>');
     });
 
 
