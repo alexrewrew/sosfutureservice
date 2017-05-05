@@ -53,7 +53,7 @@ gulp.task('pug', function buildHTML() {
 
 //js concat
 gulp.task('scripts', function () {
-    return gulp.src(['app/libs/jquery/dist/jquery.js', /*'app/libs/slick-carousel/slick/slick.js',*/ 'app/libs/lightslider/dist/js/lightslider.js', /*'app/libs/owl.carousel/dist/owl.carousel.js', 'app/libs/owl.carousel2.thumbs/dist/owl.carousel2.thumbs.js',*/  'app/js/scripts/scripts.js'])
+    return gulp.src(['app/libs/jquery/dist/jquery.js', /*'app/libs/slick-carousel/slick/slick.js',*/ 'app/libs/lightslider/dist/js/lightslider.js', /*'app/libs/owl.carousel/dist/owl.carousel.js', 'app/libs/owl.carousel2.thumbs/dist/owl.carousel2.thumbs.js',*/ 'app/js/scripts/google.js',  'app/js/scripts/scripts.js'])
         .pipe(concat('main.js'))
         .pipe(gulp.dest('app/js'));
 });

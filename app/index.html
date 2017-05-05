@@ -65,7 +65,7 @@
     <nav>
       <div class="container nav-mobile">
         <div class="row">
-          <div class="col-6"><a class="logo-mobile" href="" title="">#SOSмайбутнє</a></div>
+          <div class="col-6"><a class="logo-mobile" href="index.html" title="Головна">#SOSмайбутнє</a></div>
           <div class="col-6">
             <div id="nav-icon4"><span></span><span></span><span></span></div>
           </div>
@@ -75,25 +75,28 @@
         <div class="row">
           <div class="col-md-8">
             <ul class="menu">
-              <li><a class="logo" href="" title="Головна">#SOSмайбутнє</a></li>
-              <li><a class="active" href="" title="Мапа">Мапа</a></li>
-              <li><a href="" title="Про проект">Про проект</a></li>
-              <li><a href="" title="Контакти">Контакти</a></li>
+              <li><a class="logo" href="index.html" title="Головна">#SOSмайбутнє</a></li>
+              <li><a class="active" href="index.html" title="Мапа">Мапа</a></li>
+              <li><a href="project.html" title="Про проект">Про проект</a></li>
+              <li><a href="project.html#contacts" title="Контакти">Контакти</a></li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <ul class="login">
-              <li><a class="registration" href="" title="Реєстрація">Реєстрація</a></li>
-              <li><a href="" title="Вхід"><i class="fa fa-sign-in"></i>Вхід</a></li>
-            </ul>
-          </div>
+          <!--.col-md-4
+          ul.login
+              li
+                  a(href='' title='Реєстрація' class='registration') Реєстрація
+              li
+                  a(href='' title='Вхід')
+                      i.fa.fa-sign-in
+                      | Вхід
+          -->
         </div>
       </div>
     </nav>
     <main>
       <header></header>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7212.636388966892!2d30.52727931734129!3d50.40935008628447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2z0KLQoNCmIE9jZWFuIFBsYXph!5e0!3m2!1suk!2sua!4v1493299537793" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div id="map">
+        <!--iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7212.636388966892!2d30.52727931734129!3d50.40935008628447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2z0KLQoNCmIE9jZWFuIFBsYXph!5e0!3m2!1suk!2sua!4v1493299537793', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')-->
       </div>
       <section class="about">
         <div class="container">
@@ -102,7 +105,7 @@
               <h4>Що представлено на карті?</h4>
               <p>На карті відмічені об’єкти, що потребують допомоги. Щоб дізнатися більше, оберіть відмітку на карті. Також кожен з вас може долучитися до ініциативи та додати свою історію.</p>
             </div>
-            <div class="col-md-5 text-right"><a class="object-add" href="" title="">
+            <div class="col-md-5 text-right"><a class="object-add" href="form.html" title="Додати об'єкт">
                 <ul>
                   <li>Додати об'єкт</li>
                   <li class="plus">+</li>
@@ -110,18 +113,18 @@
           </div>
         </div>
       </section>
-      <article class="project"><a class="arrow-down" href="" title=""><i class="fa fa-angle-down"></i></a>
+      <article class="project"><a class="arrow-down" href="" title="Вниз"><i class="fa fa-angle-down"></i></a>
         <div class="container">
           <div class="row">
             <div class="col-md-5">
               <h2>Дача родини фон Мекк</h2>
-              <p class="description-small">Будівля знаходиться в приватній власності і стоїть пусткою в жалюгідному стані. Запланована реставрація до ЕВРО-2012 так і не відбулася.</p><a class="know-more smooth" href="#details" title="">Детальніше<i class="fa fa-angle-down"></i></a>
+              <p class="description-small">Будівля знаходиться в приватній власності і стоїть пусткою в жалюгідному стані. Запланована реставрація до ЕВРО-2012 так і не відбулася.</p><a class="know-more smooth" href="#details" title="Детальніше">Детальніше<i class="fa fa-angle-down"></i></a>
             </div>
             <div class="col-md-4">
-              <div class="project-image-container"><img src="img/project/project-folder.png" title="" alt=""></div>
+              <div class="project-image-container"><img src="img/project/project-folder.png" title="Проект" alt="Проект"></div>
             </div>
             <div class="col-md-3">
-              <div class="text-right"><a class="object-add" href="" title="">
+              <div class="text-right"><a class="object-add" href="form.html" title="Додати об'єкт">
                   <ul>
                     <li>Додати об'єкт</li>
                     <li class="plus">+</li>
@@ -160,7 +163,7 @@
                 <li id="current">1</li>
                 <li>/</li>
                 <li id="total"></li>
-              </ul><a class="button big" href="" title="">Додати фото</a>
+              </ul><a class="button big" href="" title="Додати фото">Додати фото</a>
             </div>
           </div>
           <div class="row spacer big"></div>
@@ -168,7 +171,7 @@
             <div class="offset-md-1 col-md-5">
               <p>Розкажи друзям, допоможи<br>нам відновити країну</p>
             </div>
-            <div class="col-md-5 text-right"><a class="button white" href="" title="">Поділитись</a></div>
+            <div class="col-md-5 text-right"><a class="button white" href="" title="Поділитись">Поділитись</a></div>
           </div>
           <div class="row spacer biggest"></div>
         </div>
@@ -186,8 +189,8 @@
             <div class="col-md-6">
               <h2>Контакти</h2>
               <p>ул. Казимира Малевича, 86П, оф.107,  Киев, Украина</p>
-              <p><a href="mailto:hello@volta.one" title="">hello@volta.one</a></p>
-              <p><a href="tel:+380981383838" title="">+38 (098) 138-38-38</a></p>
+              <p><a href="mailto:hello@volta.one" title="Електронна пошта">hello@volta.one</a></p>
+              <p><a href="tel:+380981383838" title="Телефон">+38 (098) 138-38-38</a></p>
             </div>
           </div>
         </div>

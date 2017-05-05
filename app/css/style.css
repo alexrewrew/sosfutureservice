@@ -4804,6 +4804,32 @@ a:focus {
 .arrow-down:hover .fa {
 	color: #fff;
 }
+.link-back {
+	position: absolute;
+	display: block;
+	width: 44px;
+	height: 44px;
+	left: auto;
+	right: 15px;
+	top: -10px;
+	background: #fff;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	-webkit-box-shadow: 0 0 38px 0 rgba(0,0,0,.5);
+	        box-shadow: 0 0 38px 0 rgba(0,0,0,.5);
+	text-align: center;
+	padding-top: 11px;
+}
+.link-back svg g {
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.link-back:hover {
+	background: #f03232;
+}
+.link-back:hover svg g {
+	fill: #fff;
+}
 .arrow-down.arrow-rotate {
 	-webkit-transform: rotate(180deg);
 	    -ms-transform: rotate(180deg);
@@ -5205,6 +5231,7 @@ table {
 @media (min-width: 768px) and (max-width: 991px) {
 	.form-footer input {
 		width: 100%;
+		max-width: unset;
 	}
 }
 @media (max-width: 767px) {
@@ -5437,7 +5464,7 @@ textarea.error::-webkit-input-placeholder {
 	padding-top: 15px;
 	padding-bottom: 7px;
 }
-.map iframe {
+#map {
 	width: 100%;
 	height: -webkit-calc(100vh - 172px);
 	height:         calc(100vh - 172px);
@@ -5446,17 +5473,17 @@ textarea.error::-webkit-input-placeholder {
 	        transition: all .4s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-	.map iframe {
+	#map {
 		height: -webkit-calc(100vh - 217px);
 		height:         calc(100vh - 217px);
 	}
 }
 @media (max-width: 767px) {
-	.map iframe {
+	#map {
 		padding-top: 48px;
 	}
 }
-.map.small iframe {
+#map.small {
 	height: -webkit-calc(100vh - 400px);
 	height:         calc(100vh - 400px);
 }
@@ -5611,6 +5638,11 @@ textarea.error::-webkit-input-placeholder {
 	max-width: 262px;
 	width: 100%;
 }
+@media (max-width: 767px) {
+	.add-new form button {
+		max-width: unset;
+	}
+}
 .add-new iframe {
 	height: 220px;
 	width: 100%;
@@ -5626,6 +5658,8 @@ textarea.error::-webkit-input-placeholder {
 	position: relative;
 	height: 100%;
 	width: 28px;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
 }
 @media (max-width: 767px) {
 	.counter {
@@ -5651,14 +5685,16 @@ textarea.error::-webkit-input-placeholder {
 }
 .counter:after {
 	content: '';
-	display: none;
+	display: block;
 	position: absolute;
 	width: 2px;
 	height: 20px;
 	background: #f03232;
 	top: 20px;
 	left: -16px;
-	height: 100%;
+	height: 0;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
 }
 .step {
 	-webkit-user-select: none;
@@ -5679,7 +5715,7 @@ textarea.error::-webkit-input-placeholder {
 	background: #f03232;
 }
 .step.current .counter:after {
-	display: none;
+	height: 0;
 }
 .step.passed {
 	pointer-events: auto;
@@ -5692,7 +5728,7 @@ textarea.error::-webkit-input-placeholder {
 	background: #f03232;
 }
 .step.passed .counter:after {
-	display: block;
+	height: 100%;
 }
 @media (max-width: 767px) {
 	.step.passed .counter:after {

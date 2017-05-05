@@ -6,8 +6,8 @@ block title
 
 block content
 
-    .map
-        iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7212.636388966892!2d30.52727931734129!3d50.40935008628447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2z0KLQoNCmIE9jZWFuIFBsYXph!5e0!3m2!1suk!2sua!4v1493299537793', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
+    #map
+        //iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7212.636388966892!2d30.52727931734129!3d50.40935008628447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2z0KLQoNCmIE9jZWFuIFBsYXph!5e0!3m2!1suk!2sua!4v1493299537793', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
 
     section.about
         .container
@@ -16,28 +16,28 @@ block content
                     h4 Що представлено на карті?
                     p На карті відмічені об’єкти, що потребують допомоги. Щоб дізнатися більше, оберіть відмітку на карті. Також кожен з вас може долучитися до ініциативи та додати свою історію.
                 .col-md-5.text-right
-                    a(href='' title='' class='object-add')
+                    a(href='form.html' title="Додати об'єкт" class='object-add')
                         ul
                             li Додати об'єкт
                             li.plus +
 
 
     article.project
-        a(class='arrow-down' href='' title='')
+        a(class='arrow-down' href='' title='Вниз')
             i.fa.fa-angle-down
         .container
             .row
                 .col-md-5
                     h2 Дача родини фон Мекк
                     p.description-small Будівля знаходиться в приватній власності і стоїть пусткою в жалюгідному стані. Запланована реставрація до ЕВРО-2012 так і не відбулася.
-                    a(href='#details' title='' class='know-more smooth') Детальніше
+                    a(href='#details' title='Детальніше' class='know-more smooth') Детальніше
                         i.fa.fa-angle-down
                 .col-md-4
                     .project-image-container
-                        img(src='img/project/project-folder.png' title='' alt='')
+                        img(src='img/project/project-folder.png' title='Проект' alt='Проект')
                 .col-md-3
                     .text-right
-                        a(href='' title='' class='object-add')
+                        a(href='form.html' title="Додати об'єкт" class='object-add')
                             ul
                                 li Додати об'єкт
                                 li.plus +
@@ -83,7 +83,7 @@ block content
                         li#current 1
                         li /
                         li#total
-                    a(href='' title='' class='button big') Додати фото
+                    a(href='' title='Додати фото' class='button big') Додати фото
 
             .row.spacer.big
 
@@ -93,6 +93,6 @@ block content
                         br
                         | нам відновити країну
                 .col-md-5.text-right
-                    a(href='' title='' class='button white') Поділитись
+                    a(href='' title='Поділитись' class='button white') Поділитись
 
             .row.spacer.biggest
