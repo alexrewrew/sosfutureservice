@@ -5281,9 +5281,19 @@ footer a:hover {
 	text-align: center;
 	padding-top: 35px;
 	background: #fff;
+	cursor: pointer;
+}
+.up img {
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
 }
 .up:hover {
-	opacity: .5;
+	opacity: .8;
+}
+.up:hover img {
+	-webkit-transform: translateY(-10px);
+	    -ms-transform: translateY(-10px);
+	        transform: translateY(-10px);
 }
 @-webkit-keyframes namean {
 	0% {
