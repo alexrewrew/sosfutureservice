@@ -129,3 +129,102 @@ textarea.error
   background transparent
   span
     font-size 50px
+
+.form-mail
+  .input-two
+    margin-bottom 30px
+    input
+      background $white
+      margin-bottom 15px
+  textarea
+    background $white
+  button.white
+    display block
+    margin 0 auto
+    background $red-dark
+    color $white
+    box-shadow: 0px 10px 30px 8px rgba(186,20,20,1);
+    &:hover
+      background $white
+      color $red-main
+      transform translateY(10px)
+      box-shadow: 0px 0px 15px 4px rgba(186,20,20,1);
+
+.mail-theme
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  justify-content space-between
+  margin 7px 0 30px
+  padding 0
+  +portrait()
+    flex-wrap wrap
+  +mobile()
+    flex-wrap wrap
+  li
+    list-style none
+    font-size 1em
+    font-weight 300
+    color $white
+    max-width 22%
+    flex 1 1 22%
+    background #e02525
+    text-align center
+    +portrait()
+      flex 1 1 30%
+      max-width 30%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+    margin-bottom 15px
+    &:first-child
+      padding 12px 0 14px
+      background transparent
+      text-align left
+      +portrait()
+        flex 1 1 100%
+        max-width 100%
+      +mobile()
+        flex 1 1 100%
+        max-width 100%
+    label
+      display block
+      cursor pointer
+      padding 12px 0 14px
+      margin-bottom 0
+      position relative
+      z-index 2
+      input
+        position relative
+        z-index 2
+      span.front
+        color $white
+        position relative
+        z-index 4
+        left -8px
+        &:after
+          pseudo(block,absolute)
+          width 16px
+          height 16px
+          background #e02525
+          top 2px
+          left -7px
+          z-index -1
+          border-radius 50%
+
+    label.active
+      background $white
+      span.front
+        color #e02525
+        &:after
+          background $white
+    label.hover
+      background $white
+      span.front
+        color #e02525
+        &:after
+          background $white
+
+
+    //input
+    //  display block

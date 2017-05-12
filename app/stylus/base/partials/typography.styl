@@ -10,6 +10,7 @@ h1
   text-align center
   position relative
   padding-bottom 9px
+  margin-bottom 47px
   &:after
     pseudo(block, absolute)
     width: 68px;
@@ -33,6 +34,12 @@ h2
     background $blue
     bottom 0
     left 0
+
+h2.about-header
+  font-size: 1.625em
+  letter-spacing: 4px
+  padding-bottom 10px
+
 h3
   font-size: 1.125em
   letter-spacing: 3.4px
@@ -79,6 +86,22 @@ p
     padding-right 0
     columns 1
 
+.description-contacts
+  line-height: 1.6
+
 .description-small
   +mobile()
     margin-bottom: 80px;
+
+.iniative
+  padding-right 0
+  margin-bottom 45px
+
+.red
+  color $red-main
+  display inline !important
+  font-weight: 600
+  margin 0 !important
+
+b
+  font-weight 600

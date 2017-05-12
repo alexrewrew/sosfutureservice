@@ -22,13 +22,18 @@
   color: $text-gray2
   font-weight 500
   text-align right
-  float right
-  position relative
+  //float right
+  //position relative
   height 100%
   width 28px
   transitions()
+  //
+  position: absolute;
+  right: 15px;
+
   +mobile()
     float none
+    position static
   &:before
     pseudo(block, absolute)
     width 6px
@@ -48,6 +53,21 @@
     left -16px
     height 0
     transitions()
+
+
+
+
+
+.counter-about
+  width 100%
+  text-align left
+  right auto
+  left 30px
+  +tablet()
+    font-size 1.575em
+  +portrait()
+    font-size 1.25em
+
 
 .step
   user-select none
@@ -90,3 +110,35 @@
 
 input.big
   width 100%
+
+.step-about
+  min-height 129px
+  user-select all
+  pointer-events auto
+  opacity 1
+  .counter
+    opacity .3
+
+.step-about.passed
+  .counter
+    color rgba(154,154,154,.3)
+    opacity 1
+
+.step-about.current
+  position relative
+  &:after
+    background $white
+    pseudo(block, absolute)
+    left 15px
+    right 15px
+    bottom 35px
+    top -35px
+    z-index -1
+    +mobile()
+      top -5px
+      left -15px
+      right -15px
+      bottom 5px
+
+  .counter
+    opacity 1

@@ -1,6 +1,36 @@
+//.container(style='display:none')
+section#mailBlock
+    .container
+        .row.share.purpose
+            .col-12
+                h2 Напишіть нам
+            .offset-md-1.col-md-10
+                form.form-mail
+                    ul.mail-theme
+                        li Тема повідомлення:
+                        li
+                            label(class='active')
+                                input(type='radio' name='theme' value='')
+                                span.front Контент
+                        li
+                            label(class='hover')
+                                input(type='radio' name='theme' value='')
+                                span.front Пропозиція
+                        li
+                            label
+                                input(type='radio' name='theme' value='')
+                                span.front Допомога
+                    .input-two
+                        input(type='text' placeholder='Введіть ім’я')
+                        input(type='text' placeholder='Введіть email')
+                    textarea(placeholder='Введіть email')
+                    button(type='submit' class='button white') Надіслати
+
 footer
     .container.contacts
         .row
+            a(href='#up' title='Догори' class='smooth up')
+                img(src='img/arrowup.svg' title='Догори' alt='Догори')
             .col-md-6
                 h2 Підпишись на оновлення
                 form.form-footer
@@ -8,11 +38,23 @@ footer
                     button(type='submit' class='button') Підписатись
             .col-md-6
                 h2 Контакти
-                p ул. Казимира Малевича, 86П, оф.107,  Киев, Украина
-                p
-                    a(href='mailto:hello@volta.one' title='Електронна пошта') hello@volta.one
-                p
-                    a(href='tel:+380981383838' title='Телефон') +38 (098) 138-38-38
+                p Адреса для листів: 01021, Київ, а/с 31
+                //
+                    $('#sendMail').click(function(){
+                        event.preventDefault();
+                        &('#mailBlock').slideToggle();
+                    });
+                    $(".smooth").click(function (event) {
+                            event.preventDefault();
+                            var id = $(this).attr('href'),
+                                top = $(id).offset().top;
+                            $('body,html').animate({scrollTop: (top - 100)}, 1500);
+                        });
+
+                a(href='#' title='' id='sendMail')
+                    i.fa.fa-envelope-o
+                    |  Напишіть нам
+
     .container.copyright
         .row
             .col-12
