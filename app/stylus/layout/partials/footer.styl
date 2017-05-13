@@ -17,15 +17,36 @@ footer
   margin-bottom 45px
 
 .copyright
-  p
+  .link-copyright
     font-size .75em
+    cursor pointer
+    color $text-dark
+    svg
+      g
+        fill $text-dark
+        transitions()
+    &:hover
+      color #7521e1
+      svg
+        g
+          fill #7521e1
 
 #sendMail
-  color $red-light
+  color $red-main
   letter-spacing: 3.7px;
   font-size .875em
+  svg
+    position relative
+    top 6px
+    margin-right 20px
+    g
+      stroke $red-main
+      transitions()
   &:hover
-    color $red-darker
+    color $red-light
+    svg
+      g
+        stroke $red-light
 
 .up
   position absolute

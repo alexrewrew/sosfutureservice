@@ -10,10 +10,22 @@ img {}
   +mobile()
     margin-top 13px
 
-.pic-spons
+.sponse
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  margin 0
+  padding 0
+  align-items baseline
   position absolute
   bottom -10px
   left 15px
   +mobile()
     position static
-    width 100%
+  li
+    list-style none
+    margin-right 80px
+    a
+      cursor pointer
+      &:hover
+        opacity .5
