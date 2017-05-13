@@ -5772,6 +5772,41 @@ textarea.error::-webkit-input-placeholder {
 		max-width: 100%;
 	}
 }
+.button-share {
+	position: relative;
+	min-height: 60px;
+	overflow: hidden;
+}
+.button-share span {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 18px 0 20px;
+	-webkit-transition: -webkit-transform .2s ease;
+	        transition: -webkit-transform .2s ease;
+	        transition:         transform .2s ease;
+	        transition:         transform .2s ease, -webkit-transform .2s ease;
+}
+.button-share span.back {
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	        transform: translateX(-100%);
+	font-size: 26px;
+	padding-top: 14px;
+}
+.button-share:hover span.front {
+	-webkit-transform: translateX(100%);
+	    -ms-transform: translateX(100%);
+	        transform: translateX(100%);
+}
+.button-share:hover span.back {
+	-webkit-transform: translateX(0%);
+	    -ms-transform: translateX(0%);
+	        transform: translateX(0%);
+}
 .pic-about {
 	width: 100%;
 	margin-bottom: 13px;

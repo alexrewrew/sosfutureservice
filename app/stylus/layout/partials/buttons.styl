@@ -38,3 +38,26 @@ button {}
     color $white
   +mobile()
     max-width 100%
+
+.button-share
+  position relative
+  min-height 60px
+  overflow hidden
+  span
+    display block
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    padding 18px 0 20px
+    transition transform .2s ease
+  span.back
+    transform translateX(-100%)
+    font-size 26px
+    padding-top 14px
+  &:hover
+    span.front
+      transform translateX(100%)
+    span.back
+      transform translateX(0%)
