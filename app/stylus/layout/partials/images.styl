@@ -25,7 +25,12 @@ img {}
   li
     list-style none
     margin-right 80px
+    +mobile()
+      margin-right 20px
     a
       cursor pointer
+      +mobile()
+        img
+          width 100%
       &:hover
         opacity .5

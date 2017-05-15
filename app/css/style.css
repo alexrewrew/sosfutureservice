@@ -4860,8 +4860,8 @@ a:focus {
 	background: #fff;
 	-webkit-border-radius: 50%;
 	        border-radius: 50%;
-	-webkit-box-shadow: 0 0 38px 0 rgba(0,0,0,.5);
-	        box-shadow: 0 0 38px 0 rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 4px 30px 0 #bcbcbc;
+	        box-shadow: 0 4px 30px 0 #bcbcbc;
 	text-align: center;
 	padding-top: 11px;
 }
@@ -4952,6 +4952,27 @@ a:focus {
 }
 .link-img:hover {
 	opacity: .3;
+}
+.link-block {
+	color: #000;
+}
+.link-block:hover {
+	opacity: .5;
+}
+.error-p {
+	border: 2px solid #f00;
+}
+.errors {
+	height: 30px;
+	color: #f00;
+	margin-top: -20px;
+	display: none;
+}
+.not-hover.link-copyright {
+	cursor: default;
+}
+.not-hover.link-copyright:hover {
+	color: #454545;
 }
 .ul-regular {
 	padding: 0;
@@ -5271,7 +5292,7 @@ footer a:hover {
 	margin-bottom: 45px;
 }
 .copyright .link-copyright {
-	font-size: .75em;
+	font-size: .875em;
 	cursor: pointer;
 	color: #454545;
 }
@@ -5892,8 +5913,18 @@ textarea.error::-webkit-input-placeholder {
 	list-style: none;
 	margin-right: 80px;
 }
+@media (max-width: 767px) {
+	.sponse li {
+		margin-right: 20px;
+	}
+}
 .sponse li a {
 	cursor: pointer;
+}
+@media (max-width: 767px) {
+	.sponse li a img {
+		width: 100%;
+	}
 }
 .sponse li a:hover {
 	opacity: .5;
