@@ -1,0 +1,121 @@
+//- layouts/layout.pug
+extend layouts/_layout404.pug
+
+block title
+    | #SOSмайбутнє - 404
+
+block message
+    section.message
+        .container
+            .row.justify-content-center
+                .col-md-11.col-lg-8.share
+                    h1 404
+                    p Виникла помилка, сторінка не знайдена.
+                        br
+                        | Перейдіть на головну, щоб продовжити
+                    a(href='index.html' class='button white' title='На головну') На головну
+
+block content
+
+    #map
+        //iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7212.636388966892!2d30.52727931734129!3d50.40935008628447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x324a5854eb3f1a2b!2z0KLQoNCmIE9jZWFuIFBsYXph!5e0!3m2!1suk!2sua!4v1493299537793', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
+    a(href='#' title='' class='start')
+        svg(width='18px', height='18px', viewbox='0 0 18 18', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+            g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                g#Object(transform='translate(-977.000000, -97.000000)', fill='#1F1F1F')
+                    g#Button(transform='translate(956.000000, 89.000000)')
+                        g#Normal
+                            g#Group-7(transform='translate(21.000000, 7.000000)')
+                                g#Group-6(transform='translate(0.000000, 1.000000)')
+                                    path#Shape(d='M0,0 L0,0.627906904 L0,5.65116213 L1.3255814,5.65116213 L1.3255814,1.25581381 L5.96511628,1.25581381 L5.96511628,0 L0.662790698,0 L0,0 Z M12.0348837,0 L12.0348837,1.25581381 L16.6744186,1.25581381 L16.6744186,5.65116213 L18,5.65116213 L18,0.627906904 L18,0 L17.3372093,0 L12.0348837,0 Z M0,12.3488379 L0,17.3720931 L0,18 L0.662790698,18 L5.96511628,18 L5.96511628,16.7441862 L1.3255814,16.7441862 L1.3255814,12.3488379 L0,12.3488379 Z M16.6744186,12.3488379 L16.6744186,16.7441862 L12.0348837,16.7441862 L12.0348837,18 L17.3372093,18 L18,18 L18,17.3720931 L18,12.3488379 L16.6744186,12.3488379 Z', fill-rule='nonzero')
+                                    circle#Oval-2(cx='9', cy='9', r='3')
+        |
+        span.start-text стартовое положение
+
+    section.about
+        .container
+            .row
+                .col-md-7
+                    h4 Що представлено на карті?
+                    p На карті відмічені об’єкти, що потребують допомоги. Щоб дізнатися більше, оберіть відмітку на карті. Також кожен з вас може долучитися до ініциативи та додати свою історію.
+                .col-md-5.text-right
+                    a(href='form.html' title="Додати об'єкт" class='object-add')
+                        ul
+                            li Додати об'єкт
+                            li.plus +
+
+
+    article.project
+        a(class='arrow-down' href='' title='Вниз')
+            i.fa.fa-angle-down
+        .container
+            .row
+                .col-md-5
+                    h2 Дача родини фон Мекк
+                    p.description-small Будівля знаходиться в приватній власності і стоїть пусткою в жалюгідному стані. Запланована реставрація до ЕВРО-2012 так і не відбулася.
+                    a(href='#details' title='Детальніше' class='know-more smooth') Детальніше
+                        i.fa.fa-angle-down
+                .col-md-4
+                    .project-image-container
+                        img(src='img/project/project-folder.png' title='Проект' alt='Проект')
+                .col-md-3
+                    .text-right
+                        a(href='form.html' title="Додати об'єкт" class='object-add')
+                            ul
+                                li Додати об'єкт
+                                li.plus +
+                    h3 Ініціатор:
+                    p Громада села
+                    h3 Місцезнаходження:
+                    p село Копилів Макарівського району Київської області
+            .row.spacer
+            .row
+                .col-md-10
+                    h2#details Детальна інформація
+                    p.description
+                        | Сучасна будівля має 2 поверхи, мансарду та невелику терасу. Фасад прикрашено геометричним орнаментом з дерева і романтичними гостроверхими башточками на даху. У 1889 р. та 1890 р. у Миколи фон Мекка в Копилові гостював російський композитор Петро Чайковський. Композитор був не лише дядьком дружини барона – Ганни Давидової, але й другом за перепискою його матері – Надії Філаретівни, яка підтримувала митця матеріально. У знак вдячності Чайковський присвятив свою 4-ту Симфонію Надії Філаретівні фон Мекк. В маєтку також побував Михайло Врубель. Микола Карлович допомагав художникові, скуповуючи його картини та оплачуючи лікування. У 1910 р. Микола фон Мекк продав свою садибу родині Дурасових. Після Першої світової війни та Жовтневого перевороту в будинку розміщувалась агрономічна школа, в роки німецької окупації – штаб. У 1943-1945 рр. у приміщенні маєтку фон Мекків розміщувався військовий госпіталь. До 1954 р. в будинку діяла центральна районна лікарня, а потім – Копилівська середня школа, музична школа, контора дослідного господарства «Копилове» та сільська рада. Копилів. Нині будівля знаходиться в приватній власності і стоїть пусткою в жалюгідному стані. Запланована реставрація до ЕВРО-2012 так і не відбулася.
+            .row.spacer
+            .row
+                .col-md-9
+
+                    ul.slider
+                        li(data-thumb='img/project/slider1.png')
+                            img(src='img/project/slider1.png' title='' alt='')
+                        li(data-thumb='img/project/slider2.jpg')
+                            img(src='img/project/slider2.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider3.jpg')
+                            img(src='img/project/slider3.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider4.jpg')
+                            img(src='img/project/slider4.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider5.jpg')
+                            img(src='img/project/slider5.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider1.png')
+                            img(src='img/project/slider1.png' title='' alt='')
+                        li(data-thumb='img/project/slider2.jpg')
+                            img(src='img/project/slider2.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider3.jpg')
+                            img(src='img/project/slider3.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider4.jpg')
+                            img(src='img/project/slider4.jpg' title='' alt='')
+                        li(data-thumb='img/project/slider5.jpg')
+                            img(src='img/project/slider5.jpg' title='' alt='')
+
+
+                .col-md-3
+                    ul.slider-counter
+                        li#current 1
+                        li /
+                        li#total
+                    a(href='' title='Додати фото' class='button big') Додати фото
+
+            .row.spacer.big
+
+            .row.share
+                .offset-md-1.col-md-5
+                    p Розкажи друзям, допоможи
+                        br
+                        | нам відновити країну
+                .col-md-5.text-right
+                    a(href='' title='Поділитись' class='button white') Поділитись
+
+            .row.spacer.biggest
