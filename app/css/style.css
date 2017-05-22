@@ -5376,11 +5376,11 @@ table {
 	        animation-duration: 5s;
 }
 .form-footer {
-	padding-top: 7px;
+	padding-top: 12px;
 }
 @media (max-width: 767px) {
 	.form-footer {
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 	}
 }
 .form-footer input {
@@ -5405,6 +5405,8 @@ table {
 		width: 100%;
 		margin-left: 0;
 		max-width: unset;
+		padding: 11px 33px 10px;
+		margin-bottom: 10px;
 	}
 }
 .form-footer input:focus {
@@ -5430,6 +5432,7 @@ table {
 	.form-footer button {
 		width: 100%;
 		margin-left: 0;
+		padding: 13px 33px 14px;
 	}
 }
 input {
